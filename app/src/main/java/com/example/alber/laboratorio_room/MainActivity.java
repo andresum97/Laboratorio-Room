@@ -22,6 +22,9 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         listView = (ListView) findViewById(R.id.lista);
 
+        //Database
+        AppDatabase appDatabase = AppDatabase.getInstance(this);
+
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override

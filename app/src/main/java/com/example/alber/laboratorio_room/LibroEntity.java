@@ -18,10 +18,10 @@ public class LibroEntity {
     @ColumnInfo(name = "id")
     private int id;
 
-    @ColumnInfo(name = "name")
+    @ColumnInfo(name = "name_")
     private String name;
 
-    @ColumnInfo(name = "author")
+    @ColumnInfo(name = "author_")
     private String author;
 
     public LibroEntity() {
