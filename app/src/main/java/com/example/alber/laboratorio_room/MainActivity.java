@@ -55,6 +55,9 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(TAG, "onClick: Name: "+name.getText().toString());
                 LibroEntity libroEntity = new LibroEntity(name.getText().toString(), author.getText().toString());
                 db.libroDAO().insertAll(libroEntity);
+               // Intent intent = new Intent(MainActivity.class, Main2Activity.class);
+                Intent intent = new Intent(MainActivity.this,Main2Activity.class);
+                startActivity(intent);
             }
         });
 
