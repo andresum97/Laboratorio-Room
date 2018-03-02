@@ -31,6 +31,7 @@ public class LibroEntity {
     public LibroEntity(String name, String author) {
         this.name = name;
         this.author = author;
+        this.id = id;
     }
 
     @NonNull
@@ -58,7 +59,16 @@ public class LibroEntity {
         this.author = author;
     }
 
+
     public String toString(){
         return new StringBuilder(name).append("\n").append(author).toString();
     }
+  /**  @Override
+    public String toString() {
+        return "LibroEntity{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", author='" + author + '\'' +
+                '}';
+    }*/
 }
